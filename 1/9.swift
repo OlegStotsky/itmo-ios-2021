@@ -2,11 +2,11 @@ import Foundation
 
 let n = Int(readLine(strippingNewline: true)!)!
 
-var ints = [Int]()
+var ints = Array.init(repeating:0, count:n)
 
-for _ in 1...n {
+for i in 0..<n {
   let x = Int(readLine(strippingNewline: true)!)!
-  ints.append(x)
+  ints[i] = x
 }
 
 let sorted = ints.sorted(by: <)
